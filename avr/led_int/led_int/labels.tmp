@@ -1,0 +1,51 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.2</VERSION>
+ <DEVICE>ATtiny26</DEVICE>
+ <WORKING_DIR>C:\rolandas\avr\proj\led_int\led_int</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\tn26def.inc</FILE>
+  <FILE>C:\rolandas\avr\proj\led_int\led_int\led_base.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\rolandas\avr\proj\led_int\led_int\led_int.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\rolandas\avr\proj\led_int\led_int\led_int.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\rolandas\avr\proj\led_int\led_int\led_int.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <init><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>61</LINE></init>
+  <tc0i><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>72</LINE></tc0i>
+  <led_char_bits><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>26</LINE></led_char_bits>
+  <key1cnt><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>30</LINE></key1cnt>
+  <key2cnt><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>31</LINE></key2cnt>
+  <key3cnt><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>32</LINE></key3cnt>
+  <key4cnt><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>33</LINE></key4cnt>
+  <key5cnt><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>34</LINE></key5cnt>
+  <key6cnt><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>35</LINE></key6cnt>
+  <videomem><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>37</LINE></videomem>
+  <intcnt><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>40</LINE></intcnt>
+  <main><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>183</LINE></main>
+  <put_char_pos><FILE>C:\rolandas\avr\proj\led_int\led_int\led_base.inc</FILE><LINE>13</LINE></put_char_pos>
+  <loop_get_digit><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>96</LINE></loop_get_digit>
+  <cont_get_digit><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>102</LINE></cont_get_digit>
+  <loop_keyb_out><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>136</LINE></loop_keyb_out>
+  <loop_keyb_in><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>147</LINE></loop_keyb_in>
+  <add_key><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>156</LINE></add_key>
+  <loop_keyb_out1><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>167</LINE></loop_keyb_out1>
+  <loopm><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>245</LINE></loopm>
+  <after_check_key0><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>256</LINE></after_check_key0>
+  <after_check_key1><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>265</LINE></after_check_key1>
+  <after_check_key2><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>274</LINE></after_check_key2>
+  <after_check_key3><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>283</LINE></after_check_key3>
+  <wait><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>311</LINE></wait>
+  <lp1_wait><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>312</LINE></lp1_wait>
+  <lp2_wait><FILE>C:\rolandas\avr\proj\led_int\led_int\ledmain.asm</FILE><LINE>313</LINE></lp2_wait>
+ </LABELS>
+</ASSEMBLER_INFO>

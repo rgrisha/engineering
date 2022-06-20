@@ -1,0 +1,11 @@
+#history .chartFooterName {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 0px;
+}
+
+#history .chartSpan {
+    height: 40px;
+    width: 100%;
+}

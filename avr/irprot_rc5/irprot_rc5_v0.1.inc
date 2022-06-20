@@ -1,0 +1,288 @@
+; Version 0.1 direct read from result vars
+
+.EQU ir_port            = PORTD   ; which port infrared is connected to
+.EQU ir_port_pinreg     = PIND    ; which port infrared is connected to - for reading
+.EQU ir_port_ddr        = DDRD    ; DDR reg of infrared port
+.EQU ir_port_pin = 2              ; which port pin is connected
+
+.DSEG
+ir_vars:    .BYTE 7 ; infrared variables
+
+; ir_var_status = 4 bits status, 3 bits 0, 1 bit - previous pin value
+.EQU   ir_var_status   = 0
+.EQU   ir_var_counter  = 1
+.EQU   ir_var_calibr   = 2 
+.EQU   ir_var_calibr4  = 3 
+.EQU   ir_var_result1  = 4
+.EQU   ir_var_result2  = 5
+.EQU   ir_var_bitcnt   = 6
+
+.EQU   rc5_bitcnt = 0x0C
+
+.CSEG
+
+; r16 - which param to load, returns in r17
+rcall_load_ir_sram_var:
+	push zl
+	push zh
+	push r16
+	ldi zl,low( ir_vars )
+	ldi zh,high( ir_vars )
+	add zl, r16
+	ldi r16, 0
+	adc zh, r16 ; evaluate carry bit
+
+	ld  r17, Z
+	pop r16
+	pop zh
+	pop zl
+ret
+
+; r16 - which param to save
+; r17 - new value to save
+rcall_save_ir_sram_var:
+	push zl
+	push zh
+	push r16
+	ldi zl,low( ir_vars )
+	ldi zh,high( ir_vars )
+	add zl, r16
+	ldi r16, 0
+	adc zh, r16 ; evaluate carry bit
+
+	st  Z, r17
+	pop r16
+	pop zh
+	pop zl
+ret
+
+.MACRO load_ir_sram_var
+	ldi r16, @0
+	rcall rcall_load_ir_sram_var
+.ENDMACRO
+
+.MACRO save_ir_sram_var
+	ldi r16, @0
+	ldi r17, @1
+	rcall rcall_save_ir_sram_var
+.ENDMACRO
+
+
+ir_prepare_port_pin:
+	push r16
+	;prepare port D reg, we need d2 pin,int 0
+
+	in r16, ir_port_ddr
+	andi r16, ~( 1 << ir_port_pin )
+	out ir_port_ddr, r16
+
+	in r16, ir_port
+	andi r16, ~( 1 << ir_port_pin )
+	out ir_port, r16
+	
+	pop r16
+ret
+
+irprot_clean_result:
+	push r16
+	push r17
+
+	save_ir_sram_var ir_var_result1, 0
+	save_ir_sram_var ir_var_result2, 0
+
+	pop r17
+	pop r16
+ret
+
+irprot_read_result:
+	push r16
+	push r0
+
+	load_ir_sram_var ir_var_status
+	cpi r17,4
+	breq irprot_read_result_ok
+
+	clt
+	rjmp irprot_read_result_end
+
+irprot_read_result_ok:
+	load_ir_sram_var ir_var_result1
+	mov r0, r17
+
+	rcall irprot_reinit
+	rcall irprot_clean_result
+
+	mov r17, r0
+	set
+
+irprot_read_result_end:
+	pop r0
+	pop r16
+ret
+
+
+irprot_reinit:
+	push r16
+	push r17
+
+	save_ir_sram_var ir_var_status, 0
+	save_ir_sram_var ir_var_counter, 0
+	save_ir_sram_var ir_var_calibr, 0
+	save_ir_sram_var ir_var_calibr4, 0
+	save_ir_sram_var ir_var_bitcnt, 0
+	
+	pop r17
+	pop r16
+ret
+
+
+;called from timer isr, expected ~ each 64us 
+irprot_on_timer:
+	push r16
+	push r17
+	push r18
+
+	load_ir_sram_var ir_var_counter
+	inc r17
+	mov r18, r17
+	rcall rcall_save_ir_sram_var
+
+	load_ir_sram_var ir_var_status
+	cpi r17, 3
+	brne irprot_on_timer_end ; checking only status 3
+
+	load_ir_sram_var ir_var_calibr4
+	cp r18, r17
+	brlo irprot_on_timer_end
+
+	; if counter is full and status 3, reset irprot
+	rcall irprot_clean_result
+	rcall irprot_reinit
+
+irprot_on_timer_end:
+	pop r18
+	pop r17
+	pop r16
+
+ret
+
+;r17 - status value
+save_status:
+	push r16
+	ldi r16, ir_var_status
+	rcall rcall_save_ir_sram_var
+	pop r16
+ret
+
+irprot_isr0:
+	push r16
+	push r17
+	push r18
+	push r19
+
+	load_ir_sram_var ir_var_status
+	tst r17
+	brne irprot_isr0_status_1
+	; here if status = 0
+
+	save_ir_sram_var ir_var_counter, 0
+	save_ir_sram_var ir_var_status, 1
+	rjmp irprot_isr0_end
+
+irprot_isr0_status_1:
+	load_ir_sram_var ir_var_status
+	cpi r17,1
+	brne irprot_isr0_status_2
+
+	load_ir_sram_var ir_var_counter
+	mov r18, r17
+
+	lsl r18
+	lsl r18
+	cp r18, r17
+	brsh irprot_isr0_status_1_chk1
+	ldi r18, 0xFF
+irprot_isr0_status_1_chk1:
+	mov r17, r18
+	ldi r16, ir_var_calibr4
+	rcall rcall_save_ir_sram_var
+
+	load_ir_sram_var ir_var_counter
+	mov r18, r17
+	lsr r18
+	lsr r18
+	add r17,r18
+	ldi r16, ir_var_calibr
+	rcall rcall_save_ir_sram_var
+	save_ir_sram_var ir_var_status, 2
+
+	rjmp irprot_isr0_end
+
+irprot_isr0_status_2:
+	load_ir_sram_var ir_var_status
+	cpi r17,2
+	brne irprot_isr0_status_3
+	; prepare for calc
+	save_ir_sram_var ir_var_counter, 0
+	save_ir_sram_var ir_var_status, 3
+	rjmp irprot_isr0_end
+
+irprot_isr0_status_3:
+	load_ir_sram_var ir_var_status
+	cpi r17,3
+	brne irprot_isr0_end
+	; main Mancester bit calc
+	load_ir_sram_var ir_var_counter
+	mov r18, r17
+	load_ir_sram_var ir_var_calibr
+	cp r18, r17
+	brlo irprot_isr0_end ; ignore, this is not information interrupt
+
+	; here we have information bit
+
+	load_ir_sram_var ir_var_result2
+	mov r18, r17
+	load_ir_sram_var ir_var_result1
+	
+	; read info
+	;clc
+	;sbic ir_port_pinreg, ir_port_pin 
+	;sec
+
+	sec
+	sbic ir_port_pinreg, ir_port_pin 
+	clc
+	
+	rol r17
+	rol r18
+
+	ldi r16, ir_var_result1
+	rcall rcall_save_ir_sram_var
+	mov r17, r18
+	ldi r16, ir_var_result2
+	rcall rcall_save_ir_sram_var
+
+	load_ir_sram_var ir_var_bitcnt
+	inc r17
+	rcall rcall_save_ir_sram_var
+
+	cpi r17, rc5_bitcnt
+	brsh irprot_isr0_set_st4
+
+	save_ir_sram_var ir_var_counter, 0
+	rjmp irprot_isr0_end
+
+irprot_isr0_set_st4:
+	save_ir_sram_var ir_var_status, 4
+
+
+irprot_isr0_end:
+
+	pop r19
+	pop r18
+	pop r17
+	pop r16
+ret
+
+
+

@@ -1,0 +1,1049 @@
+.....  0 frq: 1
+.....  0 frq: 1
+.....  0 frq: 2
+.....  0 frq: 3
+.....  0 frq: 4
+.....  0 frq: 5
+.....  0 frq: 6
+.....  0 frq: 7
+.....  0 frq: 8
+..#..  4 frq: 1
+..#..  4 frq: 1
+..#..  4 frq: 2
+..#..  4 frq: 3
+..#..  4 frq: 4
+.....  0 frq: 9
+..#..  4 frq: 5
+.....  0 frq: 10
+.....  0 frq: 11
+.#.#.  a frq: 1
+.#.#.  a frq: 1
+.#.#.  a frq: 2
+.....  0 frq: 12
+.....  0 frq: 13
+.....  0 frq: 14
+.....  0 frq: 15
+.....  0 frq: 16
+.....  0 frq: 17
+.#.#.  a frq: 3
+.#.#.  a frq: 4
+##### 1f frq: 1
+.#.#.  a frq: 5
+##### 1f frq: 1
+.#.#.  a frq: 6
+.#.#.  a frq: 7
+.....  0 frq: 18
+.....  0 frq: 19
+..#..  4 frq: 6
+.###.  e frq: 1
+#.#.. 14 frq: 1
+.###.  e frq: 1
+..#.#  5 frq: 1
+.###.  e frq: 2
+..#..  4 frq: 7
+.....  0 frq: 20
+.....  0 frq: 21
+.#..#  9 frq: 1
+#.#.# 15 frq: 1
+.#.#.  a frq: 8
+..#..  4 frq: 8
+.#.#.  a frq: 9
+#.#.# 15 frq: 1
+#..#. 12 frq: 1
+.....  0 frq: 22
+.....  0 frq: 23
+.#...  8 frq: 1
+#.#.. 14 frq: 1
+#.#.. 14 frq: 2
+.#...  8 frq: 1
+#.#.# 15 frq: 2
+#..#. 12 frq: 1
+.##.#  d frq: 1
+.....  0 frq: 24
+.....  0 frq: 25
+..#..  4 frq: 9
+..#..  4 frq: 10
+..#..  4 frq: 11
+.....  0 frq: 26
+.....  0 frq: 27
+.....  0 frq: 28
+.....  0 frq: 29
+.....  0 frq: 30
+.....  0 frq: 31
+...#.  2 frq: 1
+..#..  4 frq: 12
+.#...  8 frq: 2
+.#...  8 frq: 3
+.#...  8 frq: 4
+..#..  4 frq: 13
+...#.  2 frq: 1
+.....  0 frq: 32
+.....  0 frq: 33
+.#...  8 frq: 5
+..#..  4 frq: 14
+...#.  2 frq: 2
+...#.  2 frq: 3
+...#.  2 frq: 4
+..#..  4 frq: 15
+.#...  8 frq: 6
+.....  0 frq: 34
+.....  0 frq: 35
+.....  0 frq: 36
+#...# 11 frq: 1
+.#.#.  a frq: 10
+##### 1f frq: 2
+.#.#.  a frq: 11
+#...# 11 frq: 1
+.....  0 frq: 37
+.....  0 frq: 38
+.....  0 frq: 39
+.....  0 frq: 40
+..#..  4 frq: 16
+..#..  4 frq: 17
+##### 1f frq: 3
+..#..  4 frq: 18
+..#..  4 frq: 19
+.....  0 frq: 41
+.....  0 frq: 42
+.....  0 frq: 43
+.....  0 frq: 44
+.....  0 frq: 45
+.....  0 frq: 46
+.....  0 frq: 47
+.....  0 frq: 48
+..##.  6 frq: 1
+..#..  4 frq: 20
+.#...  8 frq: 7
+.....  0 frq: 49
+.....  0 frq: 50
+.....  0 frq: 51
+.....  0 frq: 52
+##### 1f frq: 4
+.....  0 frq: 53
+.....  0 frq: 54
+.....  0 frq: 55
+.....  0 frq: 56
+.....  0 frq: 57
+.....  0 frq: 58
+.....  0 frq: 59
+.....  0 frq: 60
+.....  0 frq: 61
+.....  0 frq: 62
+..#..  4 frq: 21
+.###.  e frq: 3
+..#..  4 frq: 22
+.....  0 frq: 63
+....#  1 frq: 1
+....#  1 frq: 1
+...#.  2 frq: 5
+..#..  4 frq: 23
+.#...  8 frq: 8
+#.... 10 frq: 1
+#.... 10 frq: 1
+.....  0 frq: 64
+.....  0 frq: 65
+..#..  4 frq: 24
+.#.#.  a frq: 12
+#...# 11 frq: 2
+#...# 11 frq: 3
+#...# 11 frq: 4
+.#.#.  a frq: 13
+..#..  4 frq: 25
+.....  0 frq: 66
+.....  0 frq: 67
+..#..  4 frq: 26
+.##..  c frq: 1
+#.#.. 14 frq: 3
+..#..  4 frq: 27
+..#..  4 frq: 28
+..#..  4 frq: 29
+##### 1f frq: 5
+.....  0 frq: 68
+.....  0 frq: 69
+.###.  e frq: 4
+#...# 11 frq: 5
+....#  1 frq: 2
+..##.  6 frq: 1
+.#...  8 frq: 9
+#.... 10 frq: 2
+##### 1f frq: 6
+.....  0 frq: 70
+.....  0 frq: 71
+##### 1f frq: 7
+....#  1 frq: 3
+...#.  2 frq: 6
+..##.  6 frq: 2
+....#  1 frq: 4
+#...# 11 frq: 6
+.###.  e frq: 5
+.....  0 frq: 72
+.....  0 frq: 73
+...#.  2 frq: 7
+..##.  6 frq: 3
+.#.#.  a frq: 14
+#..#. 12 frq: 2
+##### 1f frq: 8
+...#.  2 frq: 8
+...#.  2 frq: 9
+.....  0 frq: 74
+.....  0 frq: 75
+##### 1f frq: 9
+#.... 10 frq: 3
+#.##. 16 frq: 1
+##..# 19 frq: 1
+....#  1 frq: 5
+#...# 11 frq: 7
+.###.  e frq: 6
+.....  0 frq: 76
+.....  0 frq: 77
+..##.  6 frq: 4
+.#...  8 frq: 10
+#.... 10 frq: 4
+#.##. 16 frq: 1
+##..# 19 frq: 1
+#...# 11 frq: 8
+.###.  e frq: 7
+.....  0 frq: 78
+.....  0 frq: 79
+##### 1f frq: 10
+....#  1 frq: 6
+...#.  2 frq: 10
+...#.  2 frq: 11
+..#..  4 frq: 30
+.#...  8 frq: 11
+.#...  8 frq: 12
+.....  0 frq: 80
+.....  0 frq: 81
+.###.  e frq: 8
+#...# 11 frq: 9
+#...# 11 frq: 10
+.###.  e frq: 9
+#...# 11 frq: 11
+#...# 11 frq: 12
+.###.  e frq: 10
+.....  0 frq: 82
+.....  0 frq: 83
+.###.  e frq: 11
+#...# 11 frq: 13
+#..## 13 frq: 1
+.##.#  d frq: 1
+....#  1 frq: 7
+...#.  2 frq: 12
+.##..  c frq: 1
+.....  0 frq: 84
+.....  0 frq: 85
+.....  0 frq: 86
+..#..  4 frq: 31
+.###.  e frq: 12
+..#..  4 frq: 32
+.....  0 frq: 87
+..#..  4 frq: 33
+.###.  e frq: 13
+..#..  4 frq: 34
+.....  0 frq: 88
+.....  0 frq: 89
+..#..  4 frq: 35
+.###.  e frq: 14
+..#..  4 frq: 36
+.....  0 frq: 90
+..##.  6 frq: 5
+..#..  4 frq: 37
+.#...  8 frq: 13
+.....  0 frq: 91
+....#  1 frq: 8
+...#.  2 frq: 13
+..#..  4 frq: 38
+.#...  8 frq: 14
+..#..  4 frq: 39
+...#.  2 frq: 14
+....#  1 frq: 9
+.....  0 frq: 92
+.....  0 frq: 93
+.....  0 frq: 94
+.....  0 frq: 95
+##### 1f frq: 11
+.....  0 frq: 96
+##### 1f frq: 12
+.....  0 frq: 97
+.....  0 frq: 98
+.....  0 frq: 99
+.....  0 frq: 100
+.#...  8 frq: 15
+..#..  4 frq: 40
+...#.  2 frq: 15
+....#  1 frq: 10
+...#.  2 frq: 16
+..#..  4 frq: 41
+.#...  8 frq: 16
+.....  0 frq: 101
+.....  0 frq: 102
+.###.  e frq: 15
+#...# 11 frq: 14
+...#.  2 frq: 17
+..#..  4 frq: 42
+..#..  4 frq: 43
+.....  0 frq: 103
+..#..  4 frq: 44
+.....  0 frq: 104
+.....  0 frq: 105
+.###.  e frq: 16
+#...# 11 frq: 15
+#..## 13 frq: 1
+#.#.# 15 frq: 3
+#.##. 16 frq: 2
+#.... 10 frq: 5
+.###.  e frq: 17
+.....  0 frq: 106
+.....  0 frq: 107
+..#..  4 frq: 45
+.#.#.  a frq: 15
+#...# 11 frq: 16
+#...# 11 frq: 17
+##### 1f frq: 13
+#...# 11 frq: 18
+#...# 11 frq: 19
+.....  0 frq: 108
+.....  0 frq: 109
+####. 1e frq: 1
+.#..#  9 frq: 1
+.#..#  9 frq: 2
+.###.  e frq: 18
+.#..#  9 frq: 3
+.#..#  9 frq: 4
+####. 1e frq: 1
+.....  0 frq: 110
+.....  0 frq: 111
+.###.  e frq: 19
+#...# 11 frq: 20
+#.... 10 frq: 6
+#.... 10 frq: 7
+#.... 10 frq: 8
+#...# 11 frq: 21
+.###.  e frq: 20
+.....  0 frq: 112
+.....  0 frq: 113
+####. 1e frq: 2
+.#..#  9 frq: 5
+.#..#  9 frq: 6
+.#..#  9 frq: 7
+.#..#  9 frq: 8
+.#..#  9 frq: 9
+####. 1e frq: 3
+.....  0 frq: 114
+.....  0 frq: 115
+##### 1f frq: 14
+#.... 10 frq: 9
+#.... 10 frq: 10
+####. 1e frq: 4
+#.... 10 frq: 11
+#.... 10 frq: 12
+##### 1f frq: 15
+.....  0 frq: 116
+.....  0 frq: 117
+##### 1f frq: 16
+#.... 10 frq: 13
+#.... 10 frq: 14
+####. 1e frq: 5
+#.... 10 frq: 15
+#.... 10 frq: 16
+#.... 10 frq: 17
+.....  0 frq: 118
+.....  0 frq: 119
+.###.  e frq: 21
+#...# 11 frq: 22
+#.... 10 frq: 18
+#.... 10 frq: 19
+#..## 13 frq: 2
+#...# 11 frq: 23
+.###.  e frq: 22
+.....  0 frq: 120
+.....  0 frq: 121
+#...# 11 frq: 24
+#...# 11 frq: 25
+#...# 11 frq: 26
+##### 1f frq: 17
+#...# 11 frq: 27
+#...# 11 frq: 28
+#...# 11 frq: 29
+.....  0 frq: 122
+.....  0 frq: 123
+.###.  e frq: 23
+..#..  4 frq: 46
+..#..  4 frq: 47
+..#..  4 frq: 48
+..#..  4 frq: 49
+..#..  4 frq: 50
+.###.  e frq: 24
+.....  0 frq: 124
+.....  0 frq: 125
+..###  7 frq: 1
+...#.  2 frq: 18
+...#.  2 frq: 19
+...#.  2 frq: 20
+...#.  2 frq: 21
+#..#. 12 frq: 3
+.##..  c frq: 2
+.....  0 frq: 126
+.....  0 frq: 127
+#...# 11 frq: 30
+#..#. 12 frq: 4
+#.#.. 14 frq: 4
+##... 18 frq: 1
+#.#.. 14 frq: 5
+#..#. 12 frq: 5
+#...# 11 frq: 31
+.....  0 frq: 128
+.....  0 frq: 129
+#.... 10 frq: 20
+#.... 10 frq: 21
+#.... 10 frq: 22
+#.... 10 frq: 23
+#.... 10 frq: 24
+#.... 10 frq: 25
+##### 1f frq: 18
+.....  0 frq: 130
+.....  0 frq: 131
+#...# 11 frq: 32
+#...# 11 frq: 33
+##.## 1b frq: 1
+#.#.# 15 frq: 4
+#...# 11 frq: 34
+#...# 11 frq: 35
+#...# 11 frq: 36
+.....  0 frq: 132
+.....  0 frq: 133
+#...# 11 frq: 37
+#...# 11 frq: 38
+##..# 19 frq: 2
+#.#.# 15 frq: 5
+#..## 13 frq: 3
+#...# 11 frq: 39
+#...# 11 frq: 40
+.....  0 frq: 134
+.....  0 frq: 135
+.###.  e frq: 25
+#...# 11 frq: 41
+#...# 11 frq: 42
+#...# 11 frq: 43
+#...# 11 frq: 44
+#...# 11 frq: 45
+.###.  e frq: 26
+.....  0 frq: 136
+.....  0 frq: 137
+####. 1e frq: 6
+#...# 11 frq: 46
+#...# 11 frq: 47
+####. 1e frq: 7
+#.... 10 frq: 26
+#.... 10 frq: 27
+#.... 10 frq: 28
+.....  0 frq: 138
+.....  0 frq: 139
+.###.  e frq: 27
+#...# 11 frq: 48
+#...# 11 frq: 49
+#...# 11 frq: 50
+#...# 11 frq: 51
+#.#.# 15 frq: 6
+.###.  e frq: 28
+....#  1 frq: 11
+.....  0 frq: 140
+####. 1e frq: 8
+#...# 11 frq: 52
+#...# 11 frq: 53
+####. 1e frq: 9
+#.#.. 14 frq: 6
+#..#. 12 frq: 6
+#...# 11 frq: 54
+.....  0 frq: 141
+.....  0 frq: 142
+.###.  e frq: 29
+#...# 11 frq: 55
+#.... 10 frq: 29
+.###.  e frq: 30
+....#  1 frq: 12
+#...# 11 frq: 56
+.###.  e frq: 31
+.....  0 frq: 143
+.....  0 frq: 144
+##### 1f frq: 19
+..#..  4 frq: 51
+..#..  4 frq: 52
+..#..  4 frq: 53
+..#..  4 frq: 54
+..#..  4 frq: 55
+..#..  4 frq: 56
+.....  0 frq: 145
+.....  0 frq: 146
+#...# 11 frq: 57
+#...# 11 frq: 58
+#...# 11 frq: 59
+#...# 11 frq: 60
+#...# 11 frq: 61
+#...# 11 frq: 62
+.###.  e frq: 32
+.....  0 frq: 147
+.....  0 frq: 148
+#...# 11 frq: 63
+#...# 11 frq: 64
+#...# 11 frq: 65
+.#.#.  a frq: 16
+.#.#.  a frq: 17
+.#.#.  a frq: 18
+..#..  4 frq: 57
+.....  0 frq: 149
+.....  0 frq: 150
+#...# 11 frq: 66
+#...# 11 frq: 67
+#...# 11 frq: 68
+#.#.# 15 frq: 7
+#.#.# 15 frq: 8
+##.## 1b frq: 1
+#...# 11 frq: 69
+.....  0 frq: 151
+.....  0 frq: 152
+#...# 11 frq: 70
+#...# 11 frq: 71
+.#.#.  a frq: 19
+..#..  4 frq: 58
+.#.#.  a frq: 20
+#...# 11 frq: 72
+#...# 11 frq: 73
+.....  0 frq: 153
+.....  0 frq: 154
+#...# 11 frq: 74
+#...# 11 frq: 75
+.#.#.  a frq: 21
+..#..  4 frq: 59
+..#..  4 frq: 60
+..#..  4 frq: 61
+..#..  4 frq: 62
+.....  0 frq: 155
+.....  0 frq: 156
+##### 1f frq: 20
+....#  1 frq: 13
+...#.  2 frq: 22
+..#..  4 frq: 63
+.#...  8 frq: 17
+#.... 10 frq: 30
+##### 1f frq: 21
+.....  0 frq: 157
+.....  0 frq: 158
+.###.  e frq: 33
+.#...  8 frq: 18
+.#...  8 frq: 19
+.#...  8 frq: 20
+.#...  8 frq: 21
+.#...  8 frq: 22
+.###.  e frq: 34
+.....  0 frq: 159
+.....  0 frq: 160
+#.... 10 frq: 31
+#.... 10 frq: 32
+.#...  8 frq: 23
+..#..  4 frq: 64
+...#.  2 frq: 23
+....#  1 frq: 14
+....#  1 frq: 15
+.....  0 frq: 161
+.....  0 frq: 162
+.###.  e frq: 35
+...#.  2 frq: 24
+...#.  2 frq: 25
+...#.  2 frq: 26
+...#.  2 frq: 27
+...#.  2 frq: 28
+.###.  e frq: 36
+.....  0 frq: 163
+.....  0 frq: 164
+..#..  4 frq: 65
+.#.#.  a frq: 22
+#...# 11 frq: 76
+.....  0 frq: 165
+.....  0 frq: 166
+.....  0 frq: 167
+.....  0 frq: 168
+.....  0 frq: 169
+.....  0 frq: 170
+.....  0 frq: 171
+.....  0 frq: 172
+.....  0 frq: 173
+.....  0 frq: 174
+.....  0 frq: 175
+.....  0 frq: 176
+.....  0 frq: 177
+##### 1f frq: 22
+.....  0 frq: 178
+..#..  4 frq: 66
+...#.  2 frq: 29
+.....  0 frq: 179
+.....  0 frq: 180
+.....  0 frq: 181
+.....  0 frq: 182
+.....  0 frq: 183
+.....  0 frq: 184
+.....  0 frq: 185
+.....  0 frq: 186
+.....  0 frq: 187
+.###.  e frq: 37
+....#  1 frq: 16
+.####  f frq: 1
+#...# 11 frq: 77
+.####  f frq: 1
+.....  0 frq: 188
+.....  0 frq: 189
+#.... 10 frq: 33
+#.... 10 frq: 34
+#.##. 16 frq: 3
+##..# 19 frq: 3
+#...# 11 frq: 78
+##..# 19 frq: 4
+#.##. 16 frq: 4
+.....  0 frq: 190
+.....  0 frq: 191
+.....  0 frq: 192
+.....  0 frq: 193
+.###.  e frq: 38
+#...# 11 frq: 79
+#.... 10 frq: 35
+#...# 11 frq: 80
+.###.  e frq: 39
+.....  0 frq: 194
+.....  0 frq: 195
+....#  1 frq: 17
+....#  1 frq: 18
+.##.#  d frq: 2
+#..## 13 frq: 4
+#...# 11 frq: 81
+#..## 13 frq: 5
+.##.#  d frq: 3
+.....  0 frq: 196
+.....  0 frq: 197
+.....  0 frq: 198
+.....  0 frq: 199
+.###.  e frq: 40
+#...# 11 frq: 82
+##### 1f frq: 23
+#.... 10 frq: 36
+.###.  e frq: 41
+.....  0 frq: 200
+.....  0 frq: 201
+..##.  6 frq: 6
+.#..#  9 frq: 10
+.#...  8 frq: 24
+####. 1e frq: 10
+.#...  8 frq: 25
+.#...  8 frq: 26
+.#...  8 frq: 27
+.....  0 frq: 202
+.....  0 frq: 203
+.....  0 frq: 204
+.....  0 frq: 205
+.####  f frq: 2
+#...# 11 frq: 83
+#...# 11 frq: 84
+.####  f frq: 3
+....#  1 frq: 19
+#...# 11 frq: 85
+.###.  e frq: 42
+#.... 10 frq: 37
+#.... 10 frq: 38
+#.##. 16 frq: 5
+##..# 19 frq: 5
+#...# 11 frq: 86
+#...# 11 frq: 87
+#...# 11 frq: 88
+.....  0 frq: 206
+.....  0 frq: 207
+..#..  4 frq: 67
+.....  0 frq: 208
+.##..  c frq: 3
+..#..  4 frq: 68
+..#..  4 frq: 69
+..#..  4 frq: 70
+.###.  e frq: 43
+.....  0 frq: 209
+.....  0 frq: 210
+....#  1 frq: 20
+.....  0 frq: 211
+...##  3 frq: 1
+....#  1 frq: 21
+....#  1 frq: 22
+....#  1 frq: 23
+.#..#  9 frq: 11
+.#..#  9 frq: 12
+..##.  6 frq: 7
+#.... 10 frq: 39
+#.... 10 frq: 40
+#...# 11 frq: 89
+#..#. 12 frq: 7
+###.. 1c frq: 1
+#..#. 12 frq: 8
+#...# 11 frq: 90
+.....  0 frq: 212
+.....  0 frq: 213
+.##..  c frq: 4
+..#..  4 frq: 71
+..#..  4 frq: 72
+..#..  4 frq: 73
+..#..  4 frq: 74
+..#..  4 frq: 75
+.###.  e frq: 44
+.....  0 frq: 214
+.....  0 frq: 215
+.....  0 frq: 216
+.....  0 frq: 217
+##.#. 1a frq: 1
+#.#.# 15 frq: 9
+#.#.# 15 frq: 10
+#.#.# 15 frq: 11
+#...# 11 frq: 91
+.....  0 frq: 218
+.....  0 frq: 219
+.....  0 frq: 220
+.....  0 frq: 221
+#.##. 16 frq: 6
+##..# 19 frq: 6
+#...# 11 frq: 92
+#...# 11 frq: 93
+#...# 11 frq: 94
+.....  0 frq: 222
+.....  0 frq: 223
+.....  0 frq: 224
+.....  0 frq: 225
+.###.  e frq: 45
+#...# 11 frq: 95
+#...# 11 frq: 96
+#...# 11 frq: 97
+.###.  e frq: 46
+.....  0 frq: 226
+.....  0 frq: 227
+.....  0 frq: 228
+.....  0 frq: 229
+#.##. 16 frq: 7
+##..# 19 frq: 7
+#...# 11 frq: 98
+##..# 19 frq: 8
+#.##. 16 frq: 8
+#.... 10 frq: 41
+#.... 10 frq: 42
+.....  0 frq: 230
+.....  0 frq: 231
+.##.#  d frq: 4
+#..## 13 frq: 6
+#...# 11 frq: 99
+#..## 13 frq: 7
+.##.#  d frq: 5
+....#  1 frq: 24
+....#  1 frq: 25
+.....  0 frq: 232
+.....  0 frq: 233
+#.##. 16 frq: 9
+##..# 19 frq: 9
+#.... 10 frq: 43
+#.... 10 frq: 44
+#.... 10 frq: 45
+.....  0 frq: 234
+.....  0 frq: 235
+.....  0 frq: 236
+.....  0 frq: 237
+.###.  e frq: 47
+#.... 10 frq: 46
+.###.  e frq: 48
+....#  1 frq: 26
+####. 1e frq: 11
+.....  0 frq: 238
+.....  0 frq: 239
+.#...  8 frq: 28
+.#...  8 frq: 29
+####. 1e frq: 12
+.#...  8 frq: 30
+.#...  8 frq: 31
+.#..#  9 frq: 13
+..##.  6 frq: 8
+.....  0 frq: 240
+.....  0 frq: 241
+.....  0 frq: 242
+.....  0 frq: 243
+#...# 11 frq: 100
+#...# 11 frq: 101
+#...# 11 frq: 102
+#..## 13 frq: 8
+.##.#  d frq: 6
+.....  0 frq: 244
+.....  0 frq: 245
+.....  0 frq: 246
+.....  0 frq: 247
+#...# 11 frq: 103
+#...# 11 frq: 104
+.#.#.  a frq: 23
+.#.#.  a frq: 24
+..#..  4 frq: 76
+.....  0 frq: 248
+.....  0 frq: 249
+.....  0 frq: 250
+.....  0 frq: 251
+#...# 11 frq: 105
+#...# 11 frq: 106
+#.#.# 15 frq: 12
+#.#.# 15 frq: 13
+.#.#.  a frq: 25
+.....  0 frq: 252
+.....  0 frq: 253
+.....  0 frq: 254
+.....  0 frq: 255
+#...# 11 frq: 107
+.#.#.  a frq: 26
+..#..  4 frq: 77
+.#.#.  a frq: 27
+#...# 11 frq: 108
+.....  0 frq: 256
+.....  0 frq: 257
+.....  0 frq: 258
+.....  0 frq: 259
+#...# 11 frq: 109
+#...# 11 frq: 110
+#..## 13 frq: 9
+.##.#  d frq: 7
+....#  1 frq: 27
+#...# 11 frq: 111
+.###.  e frq: 49
+.....  0 frq: 260
+.....  0 frq: 261
+##### 1f frq: 24
+...#.  2 frq: 30
+..#..  4 frq: 78
+.#...  8 frq: 32
+##### 1f frq: 25
+.....  0 frq: 262
+.....  0 frq: 263
+...##  3 frq: 1
+..#..  4 frq: 79
+...#.  2 frq: 31
+.##..  c frq: 5
+...#.  2 frq: 32
+..#..  4 frq: 80
+...##  3 frq: 2
+.....  0 frq: 264
+.....  0 frq: 265
+..#..  4 frq: 81
+..#..  4 frq: 82
+..#..  4 frq: 83
+..#..  4 frq: 84
+..#..  4 frq: 85
+..#..  4 frq: 86
+..#..  4 frq: 87
+.....  0 frq: 266
+.....  0 frq: 267
+.##..  c frq: 6
+...#.  2 frq: 33
+..#..  4 frq: 88
+...##  3 frq: 3
+..#..  4 frq: 89
+...#.  2 frq: 34
+.##..  c frq: 7
+.....  0 frq: 268
+.....  0 frq: 269
+.#..#  9 frq: 14
+#.#.# 15 frq: 14
+#..#. 12 frq: 9
+.....  0 frq: 270
+.....  0 frq: 271
+.....  0 frq: 272
+.....  0 frq: 273
+.....  0 frq: 274
+.....  0 frq: 275
+.....  0 frq: 276
+.....  0 frq: 277
+.#.#.  a frq: 28
+.....  0 frq: 278
+#...# 11 frq: 112
+.###.  e frq: 50
+.....  0 frq: 279
+.....  0 frq: 280
+.....  0 frq: 281
+char 0 frq 281
+char 4 frq 89
+char a frq 28
+char 1f frq 25
+char e frq 50
+char 14 frq 6
+char 5 frq 0
+char 9 frq 14
+char 15 frq 14
+char 12 frq 9
+char 8 frq 32
+char d frq 7
+char 2 frq 34
+char 11 frq 112
+char 6 frq 8
+char 1 frq 27
+char 10 frq 46
+char c frq 7
+char 16 frq 9
+char 19 frq 9
+char 13 frq 9
+char 1e frq 12
+char 7 frq 0
+char 18 frq 0
+char 1b frq 1
+char f frq 3
+char 3 frq 3
+char 1c frq 0
+char 1a frq 0
+frq 2 analysis	 c1	0	c2	3	frq	1
+frq 2 analysis	 c1	0	c2	4	frq	7
+frq 2 analysis	 c1	0	c2	6	frq	2
+frq 2 analysis	 c1	0	c2	10	frq	1
+frq 2 analysis	 c1	0	c2	12	frq	1
+frq 2 analysis	 c1	0	c2	13	frq	1
+frq 2 analysis	 c1	0	c2	14	frq	5
+frq 2 analysis	 c1	0	c2	15	frq	1
+frq 2 analysis	 c1	0	c2	17	frq	7
+frq 2 analysis	 c1	0	c2	22	frq	3
+frq 2 analysis	 c1	0	c2	26	frq	1
+frq 2 analysis	 c1	0	c2	31	frq	5
+frq 2 analysis	 c1	1	c2	0	frq	4
+frq 2 analysis	 c1	1	c2	2	frq	7
+frq 2 analysis	 c1	1	c2	6	frq	1
+frq 2 analysis	 c1	1	c2	9	frq	1
+frq 2 analysis	 c1	1	c2	13	frq	1
+frq 2 analysis	 c1	1	c2	15	frq	1
+frq 2 analysis	 c1	1	c2	17	frq	5
+frq 2 analysis	 c1	1	c2	30	frq	1
+frq 2 analysis	 c1	2	c2	0	frq	3
+frq 2 analysis	 c1	2	c2	1	frq	3
+frq 2 analysis	 c1	2	c2	4	frq	11
+frq 2 analysis	 c1	2	c2	6	frq	2
+frq 2 analysis	 c1	2	c2	12	frq	3
+frq 2 analysis	 c1	2	c2	14	frq	1
+frq 2 analysis	 c1	2	c2	18	frq	1
+frq 2 analysis	 c1	3	c2	0	frq	1
+frq 2 analysis	 c1	3	c2	1	frq	1
+frq 2 analysis	 c1	3	c2	4	frq	2
+frq 2 analysis	 c1	4	c2	0	frq	18
+frq 2 analysis	 c1	4	c2	2	frq	8
+frq 2 analysis	 c1	4	c2	3	frq	2
+frq 2 analysis	 c1	4	c2	8	frq	10
+frq 2 analysis	 c1	4	c2	10	frq	6
+frq 2 analysis	 c1	4	c2	12	frq	1
+frq 2 analysis	 c1	4	c2	14	frq	8
+frq 2 analysis	 c1	4	c2	31	frq	2
+frq 2 analysis	 c1	5	c2	14	frq	1
+frq 2 analysis	 c1	6	c2	0	frq	1
+frq 2 analysis	 c1	6	c2	1	frq	1
+frq 2 analysis	 c1	6	c2	4	frq	2
+frq 2 analysis	 c1	6	c2	8	frq	2
+frq 2 analysis	 c1	6	c2	9	frq	1
+frq 2 analysis	 c1	6	c2	10	frq	1
+frq 2 analysis	 c1	7	c2	2	frq	1
+frq 2 analysis	 c1	8	c2	0	frq	6
+frq 2 analysis	 c1	8	c2	4	frq	5
+frq 2 analysis	 c1	8	c2	9	frq	1
+frq 2 analysis	 c1	8	c2	14	frq	1
+frq 2 analysis	 c1	8	c2	16	frq	4
+frq 2 analysis	 c1	8	c2	20	frq	1
+frq 2 analysis	 c1	8	c2	21	frq	1
+frq 2 analysis	 c1	8	c2	30	frq	2
+frq 2 analysis	 c1	8	c2	31	frq	1
+frq 2 analysis	 c1	9	c2	6	frq	2
+frq 2 analysis	 c1	9	c2	8	frq	1
+frq 2 analysis	 c1	9	c2	14	frq	1
+frq 2 analysis	 c1	9	c2	21	frq	2
+frq 2 analysis	 c1	9	c2	30	frq	2
+frq 2 analysis	 c1	10	c2	0	frq	4
+frq 2 analysis	 c1	10	c2	4	frq	7
+frq 2 analysis	 c1	10	c2	17	frq	6
+frq 2 analysis	 c1	10	c2	18	frq	1
+frq 2 analysis	 c1	10	c2	21	frq	1
+frq 2 analysis	 c1	10	c2	31	frq	3
+frq 2 analysis	 c1	12	c2	0	frq	3
+frq 2 analysis	 c1	12	c2	2	frq	2
+frq 2 analysis	 c1	12	c2	4	frq	2
+frq 2 analysis	 c1	12	c2	20	frq	1
+frq 2 analysis	 c1	13	c2	0	frq	3
+frq 2 analysis	 c1	13	c2	1	frq	3
+frq 2 analysis	 c1	13	c2	19	frq	2
+frq 2 analysis	 c1	14	c2	0	frq	19
+frq 2 analysis	 c1	14	c2	1	frq	4
+frq 2 analysis	 c1	14	c2	2	frq	1
+frq 2 analysis	 c1	14	c2	4	frq	6
+frq 2 analysis	 c1	14	c2	5	frq	1
+frq 2 analysis	 c1	14	c2	8	frq	1
+frq 2 analysis	 c1	14	c2	9	frq	1
+frq 2 analysis	 c1	14	c2	16	frq	1
+frq 2 analysis	 c1	14	c2	17	frq	14
+frq 2 analysis	 c1	14	c2	20	frq	1
+frq 2 analysis	 c1	15	c2	0	frq	1
+frq 2 analysis	 c1	15	c2	1	frq	1
+frq 2 analysis	 c1	15	c2	17	frq	2
+frq 2 analysis	 c1	16	c2	0	frq	4
+frq 2 analysis	 c1	16	c2	8	frq	1
+frq 2 analysis	 c1	16	c2	14	frq	4
+frq 2 analysis	 c1	16	c2	17	frq	3
+frq 2 analysis	 c1	16	c2	19	frq	1
+frq 2 analysis	 c1	16	c2	22	frq	4
+frq 2 analysis	 c1	16	c2	30	frq	2
+frq 2 analysis	 c1	16	c2	31	frq	4
+frq 2 analysis	 c1	17	c2	0	frq	15
+frq 2 analysis	 c1	17	c2	1	frq	1
+frq 2 analysis	 c1	17	c2	2	frq	1
+frq 2 analysis	 c1	17	c2	10	frq	7
+frq 2 analysis	 c1	17	c2	14	frq	15
+frq 2 analysis	 c1	17	c2	15	frq	2
+frq 2 analysis	 c1	17	c2	16	frq	4
+frq 2 analysis	 c1	17	c2	18	frq	2
+frq 2 analysis	 c1	17	c2	19	frq	6
+frq 2 analysis	 c1	17	c2	21	frq	3
+frq 2 analysis	 c1	17	c2	25	frq	3
+frq 2 analysis	 c1	17	c2	27	frq	1
+frq 2 analysis	 c1	17	c2	30	frq	2
+frq 2 analysis	 c1	17	c2	31	frq	3
+frq 2 analysis	 c1	18	c2	0	frq	2
+frq 2 analysis	 c1	18	c2	12	frq	1
+frq 2 analysis	 c1	18	c2	13	frq	1
+frq 2 analysis	 c1	18	c2	17	frq	3
+frq 2 analysis	 c1	18	c2	20	frq	1
+frq 2 analysis	 c1	18	c2	28	frq	1
+frq 2 analysis	 c1	18	c2	31	frq	1
+frq 2 analysis	 c1	19	c2	13	frq	5
+frq 2 analysis	 c1	19	c2	17	frq	4
+frq 2 analysis	 c1	19	c2	21	frq	1
+frq 2 analysis	 c1	20	c2	4	frq	1
+frq 2 analysis	 c1	20	c2	8	frq	1
+frq 2 analysis	 c1	20	c2	14	frq	1
+frq 2 analysis	 c1	20	c2	18	frq	2
+frq 2 analysis	 c1	20	c2	24	frq	1
+frq 2 analysis	 c1	21	c2	10	frq	2
+frq 2 analysis	 c1	21	c2	14	frq	1
+frq 2 analysis	 c1	21	c2	17	frq	2
+frq 2 analysis	 c1	21	c2	18	frq	3
+frq 2 analysis	 c1	21	c2	19	frq	1
+frq 2 analysis	 c1	21	c2	22	frq	1
+frq 2 analysis	 c1	21	c2	27	frq	1
+frq 2 analysis	 c1	22	c2	0	frq	1
+frq 2 analysis	 c1	22	c2	16	frq	2
+frq 2 analysis	 c1	22	c2	25	frq	7
+frq 2 analysis	 c1	24	c2	20	frq	1
+frq 2 analysis	 c1	25	c2	1	frq	1
+frq 2 analysis	 c1	25	c2	16	frq	1
+frq 2 analysis	 c1	25	c2	17	frq	5
+frq 2 analysis	 c1	25	c2	21	frq	1
+frq 2 analysis	 c1	25	c2	22	frq	2
+frq 2 analysis	 c1	26	c2	21	frq	1
+frq 2 analysis	 c1	27	c2	17	frq	1
+frq 2 analysis	 c1	27	c2	21	frq	1
+frq 2 analysis	 c1	28	c2	18	frq	1
+frq 2 analysis	 c1	30	c2	0	frq	3
+frq 2 analysis	 c1	30	c2	8	frq	2
+frq 2 analysis	 c1	30	c2	9	frq	2
+frq 2 analysis	 c1	30	c2	16	frq	3
+frq 2 analysis	 c1	30	c2	17	frq	2
+frq 2 analysis	 c1	30	c2	20	frq	1
+frq 2 analysis	 c1	31	c2	0	frq	10
+frq 2 analysis	 c1	31	c2	1	frq	3
+frq 2 analysis	 c1	31	c2	2	frq	2
+frq 2 analysis	 c1	31	c2	4	frq	2
+frq 2 analysis	 c1	31	c2	10	frq	3
+frq 2 analysis	 c1	31	c2	16	frq	4
+frq 2 analysis	 c1	31	c2	17	frq	2

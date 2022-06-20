@@ -1,0 +1,43 @@
+
+.equ pwm_port     = PORTB
+.equ pwm_port_ddr = DDRB
+.equ pwm_port_pin = 1
+
+
+
+init_pwm:
+	push r16
+
+	ldi r16, ( 1<< pwm_port_pin)
+	out pwm_port_ddr, r16
+	out pwm_port, r16
+	
+	ldi r16, (1<<WGM10)|(1<<COM1A1)
+	;ldi r16, 0xA1
+	out TCCR1A, r16
+	
+	ldi r16, 0x04 ; prescaler 1/256
+	out TCCR1B, r16
+
+	pop r16
+
+ret
+
+; r17 - pwm compare value
+write_pwm_compare_value:
+	push r18
+	push r16
+	; Save Global Interrupt Flag
+	in r18,SREG
+	; Disable interrupts
+	cli
+	ldi r16,0	
+	out OCR1AH,r16
+	out OCR1AL,r17
+; Restore Global Interrupt Flag
+	out SREG,r18
+	pop r16
+	pop r18
+ret
+
+ret

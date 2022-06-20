@@ -1,0 +1,399 @@
+; .include "m8def.inc"
+
+
+.equ w51 =40
+.equ w52 =100
+
+; config: 
+; PORTB 2 (PIN 16) - SDATA (4)
+; PORTB 5 (PIN 19) - RESET (1)
+; PORTB 1 (PIN 15) - CS (2)
+; PORTB 3 (PIN 17) - SCLK
+
+;.EQU nok_cs=1
+;.EQU nok_clk=3
+;.EQU nok_sio=2
+;.EQU nok_reset=5
+;.EQU nok_port=PORTB
+;.EQU carry_bit=0
+
+;LCD pins
+;Pin1 _Reset
+;Pin2 _Cs
+;Pin3 Gnd
+;Pin4 Sdata
+;Pin5 Sclk
+;Pin6 Vdigital 1.8V
+;Pin7 Vbooster in 2.7V
+;Pin8 Vlcd max.12V 
+
+
+
+; new config: 
+; PORTC 1 (PIN 24) - SDATA (4)
+; PORTC 3 (PIN 26) - RESET (1)
+; PORTC 0 (PIN 23) - CS (2)
+; PORTC 2 (PIN 25) - SCLK
+
+.EQU nok_cs=0
+.EQU nok_clk=2
+.EQU nok_sio=1
+.EQU nok_reset=3
+.EQU nok_port=PORTC
+.EQU nok_port_ddr=DDRC
+
+
+stupid_wait_5ms:
+	ldi r16, w51
+	ldi r17, w52
+stupid_wait_5ms_loop1:
+	dec r17
+	brne stupid_wait_5ms_loop1
+	ldi r17, w52
+	dec r16
+	brne stupid_wait_5ms_loop1
+	ret
+
+
+
+
+displ_low_cs:
+	cbi nok_port, nok_cs
+	ret
+
+displ_high_cs:
+	sbi nok_port, nok_cs
+	ret
+
+
+
+
+;arg - r25 bit 0
+displ_send_bit:
+	push r20
+	cbi nok_port, nok_clk
+	ldi r20, 0x01
+	and r20, r25
+	breq displ_send_bit_z
+	sbi nok_port, nok_sio
+	rjmp displ_send_bit_nz
+displ_send_bit_z:
+	cbi nok_port, nok_sio
+displ_send_bit_nz:
+	nop ; for io
+	sbi nok_port, nok_clk
+	pop r20
+	ret
+
+
+; arg - r25
+displ_send_byte:
+	push r25
+	push r20
+	rol r25 ; first rotation - do not send, MSB in Carry
+	ldi r20,0x08
+send_byte_loop1:
+	rol r25
+	rcall displ_send_bit
+	dec r20
+	brne send_byte_loop1
+	pop r20
+	pop r25
+	ret
+
+
+; arg - r25
+displ_send_command:
+	rcall displ_low_cs
+	push r25
+	ldi r25, 0x00
+	rcall displ_send_bit
+	pop r25
+	rcall displ_send_byte
+	rcall displ_high_cs
+	ret
+
+
+; arg - r25
+displ_send_parameter:
+	rcall displ_low_cs
+	push r25
+	ldi r25, 0x01
+	rcall displ_send_bit
+	pop r25
+	rcall displ_send_byte
+	rcall displ_high_cs
+	ret
+
+displ_reset:
+	cbi   nok_port,nok_reset
+	rcall stupid_wait_5ms
+	sbi   nok_port,nok_reset
+	rcall stupid_wait_5ms
+
+	sbi   nok_port,nok_cs
+	sbi   nok_port,nok_clk
+
+	ret
+
+color_square_rel:
+	; r25 - start col
+	; r24 - width 
+	; r23 - start page
+	; r22 - height
+	; r21 - color
+	push r25
+	ldi r25, 0x2A ; Col addr set
+	rcall displ_send_command 
+	pop r25
+	rcall displ_send_parameter 
+	add r25, r24
+	dec r25
+	rcall displ_send_parameter 
+
+	ldi r25, 0x2B ; Page addr set
+	rcall displ_send_command 
+	mov r25, r23
+	rcall displ_send_parameter 
+	add r25, r22
+	dec r25
+	rcall displ_send_parameter 
+	push r1
+	push r0
+	mul r24, r22
+
+	ldi r25, 0x2C ; Write memory
+	rcall displ_send_command 
+
+	mov r25, r21
+
+	inc r1
+	color_square_loop:
+	rcall displ_send_parameter 
+	dec r0
+	brne color_square_loop
+	dec r1
+	brne color_square_loop
+
+
+	;ldi r22, 0xff
+	;loop_zzz:
+	;rcall displ_send_parameter 
+	;dec r22
+	;brne loop_zzz
+
+	pop r0
+	pop r1
+
+	ret
+
+
+; r25 contains color that is used to clear
+displ_clear:
+	push r21
+	push r22
+	push r23
+	push r24
+	mov r21, r25
+
+	ldi r25, 0
+	ldi r24, 98; 98
+	ldi r23, 0 
+	ldi r22, 67
+
+
+	rcall color_square_rel	
+
+	pop r24
+	pop r23
+	pop r22
+	pop r21
+	ret
+
+lcd_init:
+
+	; prepare port for output
+	;ldi r16, 0b00101110
+	;out DDRB, r16 ; 
+
+	ldi r16, (1<<nok_cs)+(1<<nok_clk)+(1<<nok_sio)+(1<<nok_reset)
+	out nok_port_ddr, r16
+
+	rcall displ_reset
+	ldi r25, 0x01
+	rcall displ_send_command ; soft reset
+	rcall stupid_wait_5ms
+
+	ldi r25, 0xC6
+	rcall displ_send_command ; initial escape
+
+	ldi r25, 0xB9
+	rcall displ_send_command ; refresh set
+	ldi r25, 0x00
+	rcall displ_send_parameter 
+
+	ldi r25, 0xB6 ; display control
+	rcall displ_send_command 
+	ldi r25, 128 ; number of clocks
+	rcall displ_send_parameter 
+	ldi r25, 128 ; no N line inversion
+	rcall displ_send_parameter 
+	ldi r25, 129 ;2 divisions in idle mode, bias 1/9
+	rcall displ_send_parameter 
+	ldi r25, 84
+	rcall displ_send_parameter 
+	ldi r25,69 
+	rcall displ_send_parameter 
+	ldi r25,82 
+	rcall displ_send_parameter 
+	ldi r25,67 
+	rcall displ_send_parameter 
+
+	ldi r25, 0xB3 ; gray scale position set 0
+	rcall displ_send_command 
+	ldi r25, 1
+	rcall displ_send_parameter 
+	ldi r25, 2
+	rcall displ_send_parameter 
+	ldi r25, 4
+	rcall displ_send_parameter 
+	ldi r25, 8
+	rcall displ_send_parameter 
+	ldi r25, 16
+	rcall displ_send_parameter 
+	ldi r25, 30
+	rcall displ_send_parameter 
+	ldi r25, 40
+	rcall displ_send_parameter 
+	ldi r25, 50
+	rcall displ_send_parameter 
+	ldi r25, 60
+	rcall displ_send_parameter 
+	ldi r25, 70
+	rcall displ_send_parameter 
+	ldi r25, 80
+	rcall displ_send_parameter 
+	ldi r25, 90
+	rcall displ_send_parameter 
+	ldi r25, 100
+	rcall displ_send_parameter 
+	ldi r25, 110
+	rcall displ_send_parameter 
+	ldi r25, 127
+	rcall displ_send_parameter 
+
+	ldi r25, 0xB5 ; gamma curve set
+	rcall displ_send_command 
+	ldi r25, 1 ; GCPSET0
+	rcall displ_send_parameter 
+	
+	ldi r25, 0xBD ; Common driver output selec 
+	rcall displ_send_command 
+	ldi r25, 0 
+	rcall displ_send_parameter 
+
+	ldi r25, 0xBE ; POWER control
+	rcall displ_send_command 
+	ldi r25, 4
+	rcall displ_send_parameter 
+
+	ldi r25, 0x11 ; Sleep out
+	rcall displ_send_command 
+
+	ldi r25, 0xBE
+	rcall displ_send_command ; 'boosting clock half display clock, 
+				 ;internal resistance, high power mode
+	ldi r25, 4
+	rcall displ_send_parameter 
+
+	ldi r25, 0x11 ; Sleep out
+	rcall displ_send_command 
+
+	ldi r25, 0xB7 ; temperature gradient set
+	rcall displ_send_command 
+	ldi r25,0
+	ldi r16,14
+temp_grad_loop1:
+	ldi r25,0
+	rcall displ_send_parameter 
+	dec r16	
+	brne temp_grad_loop1
+
+	ldi r25, 0x03 ;Booster voltage on	
+	rcall displ_send_command 
+
+	; wait 40 milisec
+	rcall stupid_wait_5ms
+	rcall stupid_wait_5ms
+	rcall stupid_wait_5ms
+	rcall stupid_wait_5ms
+	rcall stupid_wait_5ms
+	rcall stupid_wait_5ms
+	rcall stupid_wait_5ms
+	rcall stupid_wait_5ms
+
+	; color lookup table for 256 bit color mode; 
+	; we make it 64 colors only
+	ldi r25, 0x2D ; Inversion control
+	rcall displ_send_command 
+	
+	ldi r16,5 
+set_color_table_256:
+	ldi r25, 0b00000001
+	rcall displ_send_parameter 
+	ldi r25, 0b00000011
+	rcall displ_send_parameter 
+	ldi r25, 0b00000111
+	rcall displ_send_parameter 
+	ldi r25, 0b00001111
+	rcall displ_send_parameter 
+	dec r16
+	brne set_color_table_256
+
+	; end color table set
+
+	; set 256 color mode
+	ldi r25, 0x3A ; COLMOD command
+	rcall displ_send_command 
+	ldi r25, 0b00000010
+	rcall displ_send_parameter 
+
+	ldi r25, 0x20 ; Inversion control
+	rcall displ_send_command 
+
+	;ldi r25, 0x2C ; Write memory
+	;rcall displ_send_command 
+
+	ldi r25, 0x00000000
+	rcall displ_clear
+
+	ldi r25, 0x29 ; displ on
+	rcall displ_send_command 
+
+	ret
+
+;r20 - start x
+;r21 - width
+;r22 - start y
+;r23 - height
+displ_set_cell:
+	push r25
+
+	ldi r25, 0x2A ; Col addr set
+	rcall displ_send_command 
+	mov r25, r20
+	rcall displ_send_parameter 
+	add r25, r21
+	dec r25
+	rcall displ_send_parameter 
+
+	ldi r25, 0x2B ; Page addr set
+	rcall displ_send_command 
+	mov r25, r22
+	rcall displ_send_parameter 
+	add r25, r23
+	dec r25
+	rcall displ_send_parameter 
+
+	pop r25
+	ret

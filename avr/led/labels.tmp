@@ -1,0 +1,40 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.2</VERSION>
+ <DEVICE>ATtiny26</DEVICE>
+ <WORKING_DIR>C:\rolandas\avr\proj\led</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\rolandas\avr\proj\led\main5.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\tn26def.inc</FILE>
+  <FILE>C:\rolandas\avr\proj\led\led_base.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\rolandas\avr\proj\led\led.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\rolandas\avr\proj\led\led.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\rolandas\avr\proj\led\led.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <init><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>54</LINE></init>
+  <led_char_bits><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>27</LINE></led_char_bits>
+  <key1cnt><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>31</LINE></key1cnt>
+  <key2cnt><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>32</LINE></key2cnt>
+  <key3cnt><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>33</LINE></key3cnt>
+  <key4cnt><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>34</LINE></key4cnt>
+  <key5cnt><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>35</LINE></key5cnt>
+  <key6cnt><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>36</LINE></key6cnt>
+  <videomem><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>37</LINE></videomem>
+  <main><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>62</LINE></main>
+  <put_char_pos><FILE>C:\rolandas\avr\proj\led\led_base.inc</FILE><LINE>13</LINE></put_char_pos>
+  <loopm><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>69</LINE></loopm>
+  <cont_7><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>81</LINE></cont_7>
+  <wait><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>102</LINE></wait>
+  <lp1_wait><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>103</LINE></lp1_wait>
+  <lp2_wait><FILE>C:\rolandas\avr\proj\led\main5.asm</FILE><LINE>104</LINE></lp2_wait>
+ </LABELS>
+</ASSEMBLER_INFO>

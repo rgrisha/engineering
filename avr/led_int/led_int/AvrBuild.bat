@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Program Files\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "C:\rolandas\avr\proj\led_int\led_int\labels.tmp" -fI -W+ie -o "C:\rolandas\avr\proj\led_int\led_int\led_int.hex" -d "C:\rolandas\avr\proj\led_int\led_int\led_int.obj" -e "C:\rolandas\avr\proj\led_int\led_int\led_int.eep" -m "C:\rolandas\avr\proj\led_int\led_int\led_int.map" "C:\rolandas\avr\proj\led_int\led_int\ledmain.asm"

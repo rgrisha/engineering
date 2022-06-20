@@ -1,0 +1,24 @@
+/* Now */
+#weather-now{
+  min-height: 400px;
+  background:url('../images/headerbg.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#weather-now h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#weather-now p{
+  font-size: 20px;
+}
+
+#weather-now .nowItem {
+  font-size: 3em;
+}

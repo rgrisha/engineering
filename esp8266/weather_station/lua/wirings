@@ -1,0 +1,8 @@
+
+DHT22 data -> D5
+
+BMP180
+SCL -> D7
+SDA -> D6
+
+

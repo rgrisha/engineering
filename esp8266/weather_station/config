@@ -1,0 +1,27 @@
+nomeda-ap
+Weather-BMP180!
+
+
+
+heroku
+rgrisha@yahoo.com
+DOwlEgCylpUrcu1
+
+create table measurements (dt timestamp, measurement_type char(4), measurement_subtype varchar(10), value real);
+
+
+select hour, cast(avg(temp) as numeric(8,2)) as temp, cast(avg(pres) as numeric(8,2)) as pressure, cast(avg(humi) as numeric(8,2)) as humidity from (
+	select date_part('hour', dt) as hour, value as temp, cast(null as real) as pres, cast(null as real) as humi 
+	from measurements where measurement_type='TEMP' and age(now(), dt) < '1 day'
+	union all
+	select date_part('hour', dt), null, value, null from measurements where measurement_type='PRES' and age(now(), dt) < '1 day'
+	union all
+	select date_part('hour', dt), null, null, value from measurements where measurement_type='HUMI' and age(now(), dt) < '1 day'
+) as m group by m.hour;
+
+
+
+
+
+
+
